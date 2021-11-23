@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    font-family: 'Optima', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+}
+
+body {
+    background-color: #fcfcfc;
+    
+}
+
+#animals-container, #trainers-container {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+#animals-container a, #trainers-container a {
+    text-decoration:inherit;
+    color: inherit;
+}
+
+.trainer, .animals {
+    display:none 
+}
+
+a.selected > p.trainer {
+    display:block;
+}
+
+a.selected > ul.animals{ 
+    display:block;
+}
+
+#animals-container p.trainer a{
+    text-decoration: underline;
+}
+
+a.animal-card, a.trainer-card {
+    flex-basis: 20%;
+    border: 2px solid #e2e2e2;
+    margin: 10px;
+    padding: 10px;
+}
